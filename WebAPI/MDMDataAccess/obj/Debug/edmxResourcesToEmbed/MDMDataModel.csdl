@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PVDR_MDMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="vw_MDMGoldenRecord">
+    <Key>
+      <PropertyRef Name="BusinessKey" />
+      <PropertyRef Name="NPI" />
+    </Key>
+    <Property Name="BusinessKey" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="provid" Type="Int32" />
+    <Property Name="EchoDrid" Type="Int32" />
+    <Property Name="FirstName" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="ProviderFullName" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="Provtype" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ProviderTypeDesc" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Claimtype" Type="Int32" />
+    <Property Name="Obs_claimtype" Type="Int32" />
+    <Property Name="LicenseNumber" Type="Int32" />
+    <Property Name="DOB" Type="Int32" />
+    <Property Name="SSN" Type="Int32" />
+    <Property Name="NPI" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmploymentCode" Type="Int32" />
+    <Property Name="EmploymentDescription" Type="Int32" />
+    <Property Name="Specialtycode" Type="Int32" />
+    <Property Name="SpecialtyDescription" Type="Int32" />
+    <Property Name="Profdesig" Type="Int32" />
+    <Property Name="PracAddressType" Type="Int32" />
+    <Property Name="PracAddressTypeDesc" Type="Int32" />
+    <Property Name="Addr" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="Addr2" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="48" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Zip" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Fax" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="EffDate" Type="Int32" />
+    <Property Name="TermDate" Type="Int32" />
+    <Property Name="BillAddressType" Type="Int32" />
+    <Property Name="BillAddressTypeDesc" Type="Int32" />
+    <Property Name="BillAddr" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="Billaddr2" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="BillCity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Billstate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Billzip" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Billphone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Billfax" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="BillEffdate" Type="Int32" />
+    <Property Name="BillTermdate" Type="Int32" />
+    <Property Name="TaxID" Type="Int32" />
+    <Property Name="QNXTID" Type="Int32" />
+    <Property Name="Source" Type="Int32" />
+    <Property Name="echoid" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="EchoIPAStatusCode" Type="Int32" />
+    <Property Name="EchoIPAStatusDescr" Type="Int32" />
+    <Property Name="EchoHospStatusCode" Type="Int32" />
+    <Property Name="EchoHOSPStatusDescr" Type="Int32" />
+    <Property Name="Echo_ACO_Active" Type="Int32" />
+    <Property Name="EchoIPAStatus" Type="Int32" />
+    <Property Name="EchoHOSPStatus" Type="Int32" />
+    <Property Name="Level1" Type="Int32" />
+    <Property Name="Level2" Type="Int32" />
+    <Property Name="Level3" Type="Int32" />
+    <Property Name="Email" Type="Int32" />
+    <Property Name="TaxonomyCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="spectype" Type="Int32" />
+    <Property Name="OrgName" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="PVDR_MDMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="vw_MDMGoldenRecord" EntityType="Self.vw_MDMGoldenRecord" />
+  </EntityContainer>
+</Schema>

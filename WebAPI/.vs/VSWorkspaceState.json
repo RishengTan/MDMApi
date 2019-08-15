@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MDMDataAccess",
+    "\\WebAPI",
+    "\\WebAPI\\App_Data",
+    "\\WebAPI\\App_Start",
+    "\\WebAPI\\Controllers",
+    "\\WebAPI\\Models"
+  ],
+  "SelectedNode": "\\WebAPI\\Controllers\\GoldenRecordController.cs",
+  "PreviewInSolutionExplorer": false
+}

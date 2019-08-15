@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PVDR_MDMModelStoreContainer" CdmEntityContainer="PVDR_MDMEntities">
+    <EntitySetMapping Name="vw_MDMGoldenRecord">
+      <EntityTypeMapping TypeName="PVDR_MDMModel.vw_MDMGoldenRecord">
+        <MappingFragment StoreEntitySet="vw_MDMGoldenRecord">
+          <ScalarProperty Name="BusinessKey" ColumnName="BusinessKey" />
+          <ScalarProperty Name="provid" ColumnName="provid" />
+          <ScalarProperty Name="EchoDrid" ColumnName="EchoDrid" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="ProviderFullName" ColumnName="ProviderFullName" />
+          <ScalarProperty Name="Provtype" ColumnName="Provtype" />
+          <ScalarProperty Name="ProviderTypeDesc" ColumnName="ProviderTypeDesc" />
+          <ScalarProperty Name="Claimtype" ColumnName="Claimtype" />
+          <ScalarProperty Name="Obs_claimtype" ColumnName="Obs_claimtype" />
+          <ScalarProperty Name="LicenseNumber" ColumnName="LicenseNumber" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="SSN" ColumnName="SSN" />
+          <ScalarProperty Name="NPI" ColumnName="NPI" />
+          <ScalarProperty Name="EmploymentCode" ColumnName="EmploymentCode" />
+          <ScalarProperty Name="EmploymentDescription" ColumnName="EmploymentDescription" />
+          <ScalarProperty Name="Specialtycode" ColumnName="Specialtycode" />
+          <ScalarProperty Name="SpecialtyDescription" ColumnName="SpecialtyDescription" />
+          <ScalarProperty Name="Profdesig" ColumnName="Profdesig" />
+          <ScalarProperty Name="PracAddressType" ColumnName="PracAddressType" />
+          <ScalarProperty Name="PracAddressTypeDesc" ColumnName="PracAddressTypeDesc" />
+          <ScalarProperty Name="Addr" ColumnName="Addr" />
+          <ScalarProperty Name="Addr2" ColumnName="Addr2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="EffDate" ColumnName="EffDate" />
+          <ScalarProperty Name="TermDate" ColumnName="TermDate" />
+          <ScalarProperty Name="BillAddressType" ColumnName="BillAddressType" />
+          <ScalarProperty Name="BillAddressTypeDesc" ColumnName="BillAddressTypeDesc" />
+          <ScalarProperty Name="BillAddr" ColumnName="BillAddr" />
+          <ScalarProperty Name="Billaddr2" ColumnName="Billaddr2" />
+          <ScalarProperty Name="BillCity" ColumnName="BillCity" />
+          <ScalarProperty Name="Billstate" ColumnName="Billstate" />
+          <ScalarProperty Name="Billzip" ColumnName="Billzip" />
+          <ScalarProperty Name="Billphone" ColumnName="Billphone" />
+          <ScalarProperty Name="Billfax" ColumnName="Billfax" />
+          <ScalarProperty Name="BillEffdate" ColumnName="BillEffdate" />
+          <ScalarProperty Name="BillTermdate" ColumnName="BillTermdate" />
+          <ScalarProperty Name="TaxID" ColumnName="TaxID" />
+          <ScalarProperty Name="QNXTID" ColumnName="QNXTID" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="echoid" ColumnName="echoid" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="EchoIPAStatusCode" ColumnName="EchoIPAStatusCode" />
+          <ScalarProperty Name="EchoIPAStatusDescr" ColumnName="EchoIPAStatusDescr" />
+          <ScalarProperty Name="EchoHospStatusCode" ColumnName="EchoHospStatusCode" />
+          <ScalarProperty Name="EchoHOSPStatusDescr" ColumnName="EchoHOSPStatusDescr" />
+          <ScalarProperty Name="Echo_ACO_Active" ColumnName="Echo_ACO_Active" />
+          <ScalarProperty Name="EchoIPAStatus" ColumnName="EchoIPAStatus" />
+          <ScalarProperty Name="EchoHOSPStatus" ColumnName="EchoHOSPStatus" />
+          <ScalarProperty Name="Level1" ColumnName="Level1" />
+          <ScalarProperty Name="Level2" ColumnName="Level2" />
+          <ScalarProperty Name="Level3" ColumnName="Level3" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="TaxonomyCode" ColumnName="TaxonomyCode" />
+          <ScalarProperty Name="spectype" ColumnName="spectype" />
+          <ScalarProperty Name="OrgName" ColumnName="OrgName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{953CB646-4AA4-4765-B272-DDA3D6A6DD7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDMDataAccess", "MDMDataAccess\MDMDataAccess.csproj", "{35A4D0F1-B085-4101-8F2B-5263A7751754}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{953CB646-4AA4-4765-B272-DDA3D6A6DD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{953CB646-4AA4-4765-B272-DDA3D6A6DD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{953CB646-4AA4-4765-B272-DDA3D6A6DD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{953CB646-4AA4-4765-B272-DDA3D6A6DD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35A4D0F1-B085-4101-8F2B-5263A7751754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A4D0F1-B085-4101-8F2B-5263A7751754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A4D0F1-B085-4101-8F2B-5263A7751754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A4D0F1-B085-4101-8F2B-5263A7751754}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CAE971F-F529-475C-9616-F66AA8E0FDE8}
+	EndGlobalSection
+EndGlobal

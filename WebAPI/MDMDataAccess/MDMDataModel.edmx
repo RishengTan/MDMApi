@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PVDR_MDMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'PVDR_MDM.dbo.vw_MDMGoldenRecord' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="vw_MDMGoldenRecord">
+          <Key>
+            <PropertyRef Name="BusinessKey" />
+            <PropertyRef Name="NPI" />
+          </Key>
+          <Property Name="BusinessKey" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="provid" Type="int" />
+          <Property Name="EchoDrid" Type="int" />
+          <Property Name="FirstName" Type="varchar" MaxLength="70" />
+          <Property Name="LastName" Type="varchar" MaxLength="70" />
+          <Property Name="MiddleName" Type="varchar" MaxLength="70" />
+          <Property Name="ProviderFullName" Type="varchar" MaxLength="70" />
+          <Property Name="Provtype" Type="varchar" MaxLength="5" />
+          <Property Name="ProviderTypeDesc" Type="varchar" MaxLength="15" />
+          <Property Name="Claimtype" Type="int" />
+          <Property Name="Obs_claimtype" Type="int" />
+          <Property Name="LicenseNumber" Type="int" />
+          <Property Name="DOB" Type="int" />
+          <Property Name="SSN" Type="int" />
+          <Property Name="NPI" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="EmploymentCode" Type="int" />
+          <Property Name="EmploymentDescription" Type="int" />
+          <Property Name="Specialtycode" Type="int" />
+          <Property Name="SpecialtyDescription" Type="int" />
+          <Property Name="Profdesig" Type="int" />
+          <Property Name="PracAddressType" Type="int" />
+          <Property Name="PracAddressTypeDesc" Type="int" />
+          <Property Name="Addr" Type="varchar" MaxLength="70" />
+          <Property Name="Addr2" Type="varchar" MaxLength="70" />
+          <Property Name="City" Type="varchar" MaxLength="48" />
+          <Property Name="State" Type="varchar" MaxLength="10" />
+          <Property Name="Zip" Type="varchar" MaxLength="20" />
+          <Property Name="Phone" Type="varchar" MaxLength="30" />
+          <Property Name="Fax" Type="varchar" MaxLength="30" />
+          <Property Name="EffDate" Type="int" />
+          <Property Name="TermDate" Type="int" />
+          <Property Name="BillAddressType" Type="int" />
+          <Property Name="BillAddressTypeDesc" Type="int" />
+          <Property Name="BillAddr" Type="varchar" MaxLength="70" />
+          <Property Name="Billaddr2" Type="varchar" MaxLength="70" />
+          <Property Name="BillCity" Type="varchar" MaxLength="50" />
+          <Property Name="Billstate" Type="varchar" MaxLength="10" />
+          <Property Name="Billzip" Type="varchar" MaxLength="10" />
+          <Property Name="Billphone" Type="varchar" MaxLength="30" />
+          <Property Name="Billfax" Type="varchar" MaxLength="30" />
+          <Property Name="BillEffdate" Type="int" />
+          <Property Name="BillTermdate" Type="int" />
+          <Property Name="TaxID" Type="int" />
+          <Property Name="QNXTID" Type="int" />
+          <Property Name="Source" Type="int" />
+          <Property Name="echoid" Type="int" />
+          <Property Name="status" Type="int" />
+          <Property Name="EchoIPAStatusCode" Type="int" />
+          <Property Name="EchoIPAStatusDescr" Type="int" />
+          <Property Name="EchoHospStatusCode" Type="int" />
+          <Property Name="EchoHOSPStatusDescr" Type="int" />
+          <Property Name="Echo_ACO_Active" Type="int" />
+          <Property Name="EchoIPAStatus" Type="int" />
+          <Property Name="EchoHOSPStatus" Type="int" />
+          <Property Name="Level1" Type="int" />
+          <Property Name="Level2" Type="int" />
+          <Property Name="Level3" Type="int" />
+          <Property Name="Email" Type="int" />
+          <Property Name="TaxonomyCode" Type="varchar" MaxLength="30" />
+          <Property Name="spectype" Type="int" />
+          <Property Name="OrgName" Type="varchar" MaxLength="120" />
+        </EntityType>
+        <EntityContainer Name="PVDR_MDMModelStoreContainer">
+          <EntitySet Name="vw_MDMGoldenRecord" EntityType="Self.vw_MDMGoldenRecord" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [vw_MDMGoldenRecord].[BusinessKey] AS [BusinessKey], 
+    [vw_MDMGoldenRecord].[provid] AS [provid], 
+    [vw_MDMGoldenRecord].[EchoDrid] AS [EchoDrid], 
+    [vw_MDMGoldenRecord].[FirstName] AS [FirstName], 
+    [vw_MDMGoldenRecord].[LastName] AS [LastName], 
+    [vw_MDMGoldenRecord].[MiddleName] AS [MiddleName], 
+    [vw_MDMGoldenRecord].[ProviderFullName] AS [ProviderFullName], 
+    [vw_MDMGoldenRecord].[Provtype] AS [Provtype], 
+    [vw_MDMGoldenRecord].[ProviderTypeDesc] AS [ProviderTypeDesc], 
+    [vw_MDMGoldenRecord].[Claimtype] AS [Claimtype], 
+    [vw_MDMGoldenRecord].[Obs_claimtype] AS [Obs_claimtype], 
+    [vw_MDMGoldenRecord].[LicenseNumber] AS [LicenseNumber], 
+    [vw_MDMGoldenRecord].[DOB] AS [DOB], 
+    [vw_MDMGoldenRecord].[SSN] AS [SSN], 
+    [vw_MDMGoldenRecord].[NPI] AS [NPI], 
+    [vw_MDMGoldenRecord].[EmploymentCode] AS [EmploymentCode], 
+    [vw_MDMGoldenRecord].[EmploymentDescription] AS [EmploymentDescription], 
+    [vw_MDMGoldenRecord].[Specialtycode] AS [Specialtycode], 
+    [vw_MDMGoldenRecord].[SpecialtyDescription] AS [SpecialtyDescription], 
+    [vw_MDMGoldenRecord].[Profdesig] AS [Profdesig], 
+    [vw_MDMGoldenRecord].[PracAddressType] AS [PracAddressType], 
+    [vw_MDMGoldenRecord].[PracAddressTypeDesc] AS [PracAddressTypeDesc], 
+    [vw_MDMGoldenRecord].[Addr] AS [Addr], 
+    [vw_MDMGoldenRecord].[Addr2] AS [Addr2], 
+    [vw_MDMGoldenRecord].[City] AS [City], 
+    [vw_MDMGoldenRecord].[State] AS [State], 
+    [vw_MDMGoldenRecord].[Zip] AS [Zip], 
+    [vw_MDMGoldenRecord].[Phone] AS [Phone], 
+    [vw_MDMGoldenRecord].[Fax] AS [Fax], 
+    [vw_MDMGoldenRecord].[EffDate] AS [EffDate], 
+    [vw_MDMGoldenRecord].[TermDate] AS [TermDate], 
+    [vw_MDMGoldenRecord].[BillAddressType] AS [BillAddressType], 
+    [vw_MDMGoldenRecord].[BillAddressTypeDesc] AS [BillAddressTypeDesc], 
+    [vw_MDMGoldenRecord].[BillAddr] AS [BillAddr], 
+    [vw_MDMGoldenRecord].[Billaddr2] AS [Billaddr2], 
+    [vw_MDMGoldenRecord].[BillCity] AS [BillCity], 
+    [vw_MDMGoldenRecord].[Billstate] AS [Billstate], 
+    [vw_MDMGoldenRecord].[Billzip] AS [Billzip], 
+    [vw_MDMGoldenRecord].[Billphone] AS [Billphone], 
+    [vw_MDMGoldenRecord].[Billfax] AS [Billfax], 
+    [vw_MDMGoldenRecord].[BillEffdate] AS [BillEffdate], 
+    [vw_MDMGoldenRecord].[BillTermdate] AS [BillTermdate], 
+    [vw_MDMGoldenRecord].[TaxID] AS [TaxID], 
+    [vw_MDMGoldenRecord].[QNXTID] AS [QNXTID], 
+    [vw_MDMGoldenRecord].[Source] AS [Source], 
+    [vw_MDMGoldenRecord].[echoid] AS [echoid], 
+    [vw_MDMGoldenRecord].[status] AS [status], 
+    [vw_MDMGoldenRecord].[EchoIPAStatusCode] AS [EchoIPAStatusCode], 
+    [vw_MDMGoldenRecord].[EchoIPAStatusDescr] AS [EchoIPAStatusDescr], 
+    [vw_MDMGoldenRecord].[EchoHospStatusCode] AS [EchoHospStatusCode], 
+    [vw_MDMGoldenRecord].[EchoHOSPStatusDescr] AS [EchoHOSPStatusDescr], 
+    [vw_MDMGoldenRecord].[Echo_ACO_Active] AS [Echo_ACO_Active], 
+    [vw_MDMGoldenRecord].[EchoIPAStatus] AS [EchoIPAStatus], 
+    [vw_MDMGoldenRecord].[EchoHOSPStatus] AS [EchoHOSPStatus], 
+    [vw_MDMGoldenRecord].[Level1] AS [Level1], 
+    [vw_MDMGoldenRecord].[Level2] AS [Level2], 
+    [vw_MDMGoldenRecord].[Level3] AS [Level3], 
+    [vw_MDMGoldenRecord].[Email] AS [Email], 
+    [vw_MDMGoldenRecord].[TaxonomyCode] AS [TaxonomyCode], 
+    [vw_MDMGoldenRecord].[spectype] AS [spectype], 
+    [vw_MDMGoldenRecord].[OrgName] AS [OrgName]
+    FROM [dbo].[vw_MDMGoldenRecord] AS [vw_MDMGoldenRecord]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PVDR_MDMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="vw_MDMGoldenRecord">
+          <Key>
+            <PropertyRef Name="BusinessKey" />
+            <PropertyRef Name="NPI" />
+          </Key>
+          <Property Name="BusinessKey" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="provid" Type="Int32" />
+          <Property Name="EchoDrid" Type="Int32" />
+          <Property Name="FirstName" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+          <Property Name="LastName" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+          <Property Name="MiddleName" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+          <Property Name="ProviderFullName" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+          <Property Name="Provtype" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="ProviderTypeDesc" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Claimtype" Type="Int32" />
+          <Property Name="Obs_claimtype" Type="Int32" />
+          <Property Name="LicenseNumber" Type="Int32" />
+          <Property Name="DOB" Type="Int32" />
+          <Property Name="SSN" Type="Int32" />
+          <Property Name="NPI" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EmploymentCode" Type="Int32" />
+          <Property Name="EmploymentDescription" Type="Int32" />
+          <Property Name="Specialtycode" Type="Int32" />
+          <Property Name="SpecialtyDescription" Type="Int32" />
+          <Property Name="Profdesig" Type="Int32" />
+          <Property Name="PracAddressType" Type="Int32" />
+          <Property Name="PracAddressTypeDesc" Type="Int32" />
+          <Property Name="Addr" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+          <Property Name="Addr2" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="48" FixedLength="false" Unicode="false" />
+          <Property Name="State" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Zip" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Fax" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="EffDate" Type="Int32" />
+          <Property Name="TermDate" Type="Int32" />
+          <Property Name="BillAddressType" Type="Int32" />
+          <Property Name="BillAddressTypeDesc" Type="Int32" />
+          <Property Name="BillAddr" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+          <Property Name="Billaddr2" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+          <Property Name="BillCity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Billstate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Billzip" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Billphone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Billfax" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="BillEffdate" Type="Int32" />
+          <Property Name="BillTermdate" Type="Int32" />
+          <Property Name="TaxID" Type="Int32" />
+          <Property Name="QNXTID" Type="Int32" />
+          <Property Name="Source" Type="Int32" />
+          <Property Name="echoid" Type="Int32" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="EchoIPAStatusCode" Type="Int32" />
+          <Property Name="EchoIPAStatusDescr" Type="Int32" />
+          <Property Name="EchoHospStatusCode" Type="Int32" />
+          <Property Name="EchoHOSPStatusDescr" Type="Int32" />
+          <Property Name="Echo_ACO_Active" Type="Int32" />
+          <Property Name="EchoIPAStatus" Type="Int32" />
+          <Property Name="EchoHOSPStatus" Type="Int32" />
+          <Property Name="Level1" Type="Int32" />
+          <Property Name="Level2" Type="Int32" />
+          <Property Name="Level3" Type="Int32" />
+          <Property Name="Email" Type="Int32" />
+          <Property Name="TaxonomyCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="spectype" Type="Int32" />
+          <Property Name="OrgName" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="PVDR_MDMEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="vw_MDMGoldenRecord" EntityType="Self.vw_MDMGoldenRecord" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PVDR_MDMModelStoreContainer" CdmEntityContainer="PVDR_MDMEntities">
+          <EntitySetMapping Name="vw_MDMGoldenRecord">
+            <EntityTypeMapping TypeName="PVDR_MDMModel.vw_MDMGoldenRecord">
+              <MappingFragment StoreEntitySet="vw_MDMGoldenRecord">
+                <ScalarProperty Name="BusinessKey" ColumnName="BusinessKey" />
+                <ScalarProperty Name="provid" ColumnName="provid" />
+                <ScalarProperty Name="EchoDrid" ColumnName="EchoDrid" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="ProviderFullName" ColumnName="ProviderFullName" />
+                <ScalarProperty Name="Provtype" ColumnName="Provtype" />
+                <ScalarProperty Name="ProviderTypeDesc" ColumnName="ProviderTypeDesc" />
+                <ScalarProperty Name="Claimtype" ColumnName="Claimtype" />
+                <ScalarProperty Name="Obs_claimtype" ColumnName="Obs_claimtype" />
+                <ScalarProperty Name="LicenseNumber" ColumnName="LicenseNumber" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="SSN" ColumnName="SSN" />
+                <ScalarProperty Name="NPI" ColumnName="NPI" />
+                <ScalarProperty Name="EmploymentCode" ColumnName="EmploymentCode" />
+                <ScalarProperty Name="EmploymentDescription" ColumnName="EmploymentDescription" />
+                <ScalarProperty Name="Specialtycode" ColumnName="Specialtycode" />
+                <ScalarProperty Name="SpecialtyDescription" ColumnName="SpecialtyDescription" />
+                <ScalarProperty Name="Profdesig" ColumnName="Profdesig" />
+                <ScalarProperty Name="PracAddressType" ColumnName="PracAddressType" />
+                <ScalarProperty Name="PracAddressTypeDesc" ColumnName="PracAddressTypeDesc" />
+                <ScalarProperty Name="Addr" ColumnName="Addr" />
+                <ScalarProperty Name="Addr2" ColumnName="Addr2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="EffDate" ColumnName="EffDate" />
+                <ScalarProperty Name="TermDate" ColumnName="TermDate" />
+                <ScalarProperty Name="BillAddressType" ColumnName="BillAddressType" />
+                <ScalarProperty Name="BillAddressTypeDesc" ColumnName="BillAddressTypeDesc" />
+                <ScalarProperty Name="BillAddr" ColumnName="BillAddr" />
+                <ScalarProperty Name="Billaddr2" ColumnName="Billaddr2" />
+                <ScalarProperty Name="BillCity" ColumnName="BillCity" />
+                <ScalarProperty Name="Billstate" ColumnName="Billstate" />
+                <ScalarProperty Name="Billzip" ColumnName="Billzip" />
+                <ScalarProperty Name="Billphone" ColumnName="Billphone" />
+                <ScalarProperty Name="Billfax" ColumnName="Billfax" />
+                <ScalarProperty Name="BillEffdate" ColumnName="BillEffdate" />
+                <ScalarProperty Name="BillTermdate" ColumnName="BillTermdate" />
+                <ScalarProperty Name="TaxID" ColumnName="TaxID" />
+                <ScalarProperty Name="QNXTID" ColumnName="QNXTID" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="echoid" ColumnName="echoid" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="EchoIPAStatusCode" ColumnName="EchoIPAStatusCode" />
+                <ScalarProperty Name="EchoIPAStatusDescr" ColumnName="EchoIPAStatusDescr" />
+                <ScalarProperty Name="EchoHospStatusCode" ColumnName="EchoHospStatusCode" />
+                <ScalarProperty Name="EchoHOSPStatusDescr" ColumnName="EchoHOSPStatusDescr" />
+                <ScalarProperty Name="Echo_ACO_Active" ColumnName="Echo_ACO_Active" />
+                <ScalarProperty Name="EchoIPAStatus" ColumnName="EchoIPAStatus" />
+                <ScalarProperty Name="EchoHOSPStatus" ColumnName="EchoHOSPStatus" />
+                <ScalarProperty Name="Level1" ColumnName="Level1" />
+                <ScalarProperty Name="Level2" ColumnName="Level2" />
+                <ScalarProperty Name="Level3" ColumnName="Level3" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="TaxonomyCode" ColumnName="TaxonomyCode" />
+                <ScalarProperty Name="spectype" ColumnName="spectype" />
+                <ScalarProperty Name="OrgName" ColumnName="OrgName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
