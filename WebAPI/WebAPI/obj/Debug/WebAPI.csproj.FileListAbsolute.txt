@@ -143,3 +143,6 @@ C:\Users\rtan2\app\MDM\WebAPI\WebAPI\obj\Debug\WebAPI.pdb
 C:\Users\rtan2\app\MDM\WebAPI\WebAPI\bin\System.Web.Cors.dll
 C:\Users\rtan2\app\MDM\WebAPI\WebAPI\bin\System.Web.Http.Cors.dll
 C:\Users\rtan2\app\MDM\WebAPI\WebAPI\bin\System.Web.Http.Cors.xml
+C:\Users\kravindran\source\repos\WebAPI\WebAPI\bin\System.Web.Cors.dll
+C:\Users\kravindran\source\repos\WebAPI\WebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\kravindran\source\repos\WebAPI\WebAPI\bin\System.Web.Http.Cors.xml

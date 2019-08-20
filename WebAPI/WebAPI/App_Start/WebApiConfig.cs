@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http.Formatting;
 using System.Web.Http;
 using System.Net.Http.Headers;
+using System.Web.Http.Cors;
 
 namespace WebAPI
 {
@@ -37,7 +38,10 @@ namespace WebAPI
                 defaults: new { id = RouteParameter.Optional }
             );
             config.Formatters.Add(new CustomJsonFormatter()); //registering SetRequestResponseAlwaysToJsonFormat region
-            config.EnableCors();
+            #region EnableCORS
+            EnableCorsAttribute cors = new EnableCorsAttribute("http://localhost:4200", "*", "*");
+            config.EnableCors(cors);
+            #endregion
         }
     }
 }
